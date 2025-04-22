@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+}
+body {
+  background: #021526 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.form-switch{
+  transition: .3s;
+}
+h1,
+h2,
+p {
+  color: white !important;
+  animation: fadeIn 1s ease-in-out;
+}
+
+iframe {
+  border-radius: 5px !important;
+  /* border: 2px white solid !important; */
+}
+
+.bg-transparent {
+  background: transparent !important;
+}
+
+.bg-primary{
+  background-color: #03346e !important;
+}
+
+.btn-primary {
+  background-color: #03346e !important;
+  border-color: #00346e !important;
+}
+
+.btn-primary{
+  font-weight: bold;
+}
+
+.link-primary {
+  color: white !important;
+  text-underline: white !important;
+  text-decoration-color: white !important;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-text-decoration-color: white !important;
+  transition: 0.5s;
+}
+
+.link-primary:hover {
+  color: white !important;
+  text-underline: white !important;
+  text-decoration-color: white !important;
+  cursor: pointer;
+  -webkit-text-decoration-color: white !important;
+  transform: scale(110%) !important;
+}
+
+.btn-primary {
+  transition: 0.5s;
+  background-color: #00346e !important;
+  border: 2px solid #01438d !important;
+}
+
+.btn-primary:hover {
+  background-color: #03346e !important;
+  box-shadow: 0px 0px 10px #07468e !important;
+  transform: scale(105%);
+}
+
+.form-floating {
+  background: white !important;
+  color: #021526 !important;
+}
+
+.form-control {
+  background: white !important;
+  color: #021526 !important;
+}
+
+.form-floating > input:not(:focus):placeholder-shown + label {
+  background: transparent !important;
+}
+
+.form-floating > input + label:after {
+  background: transparent !important;
+  color: white !important;
+}
+
+.form-floating > input:not(:focus):placeholder-shown + label {
+  background: transparent !important;
+  color: white !important;
+}
+
+.form-floating > input:focus + label,
+.form-floating > input:not(:placeholder-shown) + label {
+  background: transparent !important;
+  color: white !important;
+}
+
+
+.locations-heading{
+   /* background-color: #00346e !important; */ 
+  /* border: 2px solid #01438d !important; */
+  width: 600px !important;
+  border-radius: 30px;
+  pointer-events: none !important;
+  /* font-style: italic; */
+}
+/* Make the navbar sticky and on top of everything */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand{
+   font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+/* Add padding to the top of the container to ensure locations are not hidden under the navbar */
+.container {
+  padding-top: 80px; /* Adjust this value as needed */
+}
+
+.modal-dialog {
+  border: 1px solid white !important;
+  padding: 10px !important;
+  border-radius: 25px !important;
+  background: #021526 !important;
+}
+
+/* Style the modal background */
+.modal-content {
+  background: #021526 !important;
+  color: white !important;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
